@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
     <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
     </head>
     <body>
         <div class="forms">
-            <input type="number" id="number_1"></input>
-            <select id="operator">
-                <option>+</option>
-                <option>-</option>
-                <option>*</option>
-                <option>/</option>
-            </select>
-            <input type="number" id="number_2"></input>
+            <div class="in-row">
+                <input type="number" id="number_1">
+                <select id="operator">
+                    <option>+</option>
+                    <option>-</option>
+                    <option>*</option>
+                    <option>/</option>
+                </select>
+                <input type="number" id="number_2">
+            </div>
             <button type="button" onclick="calc()">подсчитать</button>
-            <textarea id="result"></textarea>
+            <div class="result">
+                <p class="result-old"></p>
+                <p class="result-new"></p>
+                <p id="error"></p>
+            </div>
         </div>
     </body>
 </html>

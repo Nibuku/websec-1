@@ -1,20 +1,118 @@
 input,
 select,
-button,
-textarea {
+button {
     border-style: dashed;
-    border-color: red
+    border-color: red;
+    background-color: #baffc2;
+    padding: 5px; 
+    border-radius: 10px; 
+    box-sizing:border-box;
+    border-width: 2px;
+    color: red;
+    font-weight: bold;
+    font-size: 16px;
+    max-height: 35px;
 }
 
 .forms {
-    background-color: aquamarine;
-    max-width: 67%;
-    max-height: 300px;
+    display: flex;
+    background-color: #baffc2;
+    max-width: 600px; 
     margin: 20px;
+    width: 100%; 
+    border-radius: 10px; 
+    padding:20px;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
 }
 
 body {
     display: flex;
-    justify-content: left;
+    justify-content:space-between;
+    align-items: center;
+}
 
+.in-row {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+    justify-content: center;
+}
+
+.in-row select {
+    flex: 0.4;  
+}   
+
+.in-row input {
+    flex: 1.1; 
+}
+
+button {
+    width: 25%;
+}
+
+.result {
+    width: 100%;
+    margin-top:10px;
+    border-style: dashed;
+    border-color: red;
+    background-color: #baffc2;
+    border-radius: 10px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    font-weight: bold;
+    color: red;
+    font-family: monospace;
+}
+
+.result-old {
+    margin: 0;
+    padding: 2px 5px;
+    color: rgba(255, 0, 0, 0.6);
+    min-height: 20px;
+}
+
+.result-new {
+    margin: 0;
+    padding: 2px 5px;
+    font-family: monospace;
+    font-weight: bold;
+    min-height: 20px;
+}
+
+@media (max-width: 600px) {
+  .forms {
+    width: 90%;
+    margin: 10px auto;
+    min-width: 300px;
+  }
+
+  .in-row {
+    flex-direction: column; 
+    align-items: center; 
+    width: 100%;
+    gap: 10px; 
+  }
+
+  button {
+    min-width: 30%;
+    font-size:13px
+  }
+
+  .in-row select {
+    width: 30%;  
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+    text-align-last: center;
+   }  
+
+   .in-row input {
+    width: 100%; 
+    }
 }
